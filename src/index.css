@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-script: 'Dancing Script', cursive;
+    --font-editorial: 'Cormorant Garamond', Garamond, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+}
+
+/* Subtle romantic lace & starlight background pattern */
+.bg-romantic-pattern {
+  background-color: #fffaf7;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(251, 207, 232, 0.22) 1px, transparent 1px),
+    radial-gradient(circle at 0% 100%, rgba(244, 114, 182, 0.08) 15%, transparent 60%),
+    radial-gradient(circle at 100% 0%, rgba(212, 175, 55, 0.07) 20%, transparent 60%);
+  background-size: 24px 24px, 100% 100%, 100% 100%;
+}
+
+/* Delicate golden shimmer border */
+.gold-shimmer-border {
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  box-shadow: 0 4px 24px -2px rgba(244, 114, 182, 0.12), 0 0 12px 1px rgba(212, 175, 55, 0.08);
+}
+
+.gold-shimmer-border:hover {
+  border-color: rgba(212, 175, 55, 0.55);
+  box-shadow: 0 10px 30px -4px rgba(244, 114, 182, 0.2), 0 0 20px 2px rgba(212, 175, 55, 0.16);
+}
+
+/* Soft paper texture */
+.paper-texture {
+  background: #fdfaf7;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.015) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.015) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* 3D Envelope perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.animate-float-soft {
+  animation: floatSoft 5s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(244, 114, 182, 0.3), 0 0 30px rgba(212, 175, 55, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(244, 114, 182, 0.5), 0 0 45px rgba(212, 175, 55, 0.3);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3.5s ease-in-out infinite;
+}

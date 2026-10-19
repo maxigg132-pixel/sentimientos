@@ -1,0 +1,6 @@
+{
+  "name": "Mi Devoción Oculta - Juramento de Amor Eterno",
+  "description": "Página dedicada exclusivamente a un amor inolvidable, con sus videos, recuerdos y el testamento jurando devoción eterna.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
